@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local experiment outputs and solver artifacts
+/runs/
+*.mps.gz
+*.sol.gz
+*.lp
+*.mst

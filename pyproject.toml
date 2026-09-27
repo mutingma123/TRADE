@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trade-intersection"
+version = "0.1.0"
+description = "Horizon-free two-stage intersection scheduling and experiment execution"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["gurobipy>=12,<14", "numpy>=2,<3", "scipy>=1.15,<2"]
+
+[project.scripts]
+trade = "trade.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["Decomposed*", "HorizonFree*", "trade*"]
+
+[tool.setuptools.package-data]
+Decomposed = ["data/geometry/*.csv"]
