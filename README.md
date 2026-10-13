@@ -1,8 +1,12 @@
 # TRADE
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23347048.svg)](https://doi.org/10.5281/zenodo.23347048)
+
 TRADE contains the computational core of the synchronized and random arrival experiments on horizon-free vehicle ladders. It schedules conflict-cell events, realizes continuous vehicle trajectories, validates the trajectories, and evaluates delay and stochastic collision costs on shared definitions.
 
 The repository includes the physical geometry data and the three practical controller baselines: FCFS, actuated signals, and all-way stop. It is licensed under Apache 2.0.
+
+Archived releases are available on [Zenodo](https://doi.org/10.5281/zenodo.23347048). To cite version 0.1.0 specifically, use [10.5281/zenodo.23347049](https://doi.org/10.5281/zenodo.23347049).
 
 ## Installation
 
